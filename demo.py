@@ -14,5 +14,9 @@ Options:
 
 from docopt import docopt
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
+def main(options):
+    print(options)
+    print(type(options))
+
+if __name__ == "__main__":
+    main(opt)
